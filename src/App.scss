@@ -1,0 +1,8 @@
+@use "@material/theme" with (
+  $primary: #FEDBD0,
+  $on-primary: #442C2E
+);
+
+img {
+  height: 100px;
+}
