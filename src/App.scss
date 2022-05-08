@@ -3,6 +3,23 @@
   $on-primary: #442C2E
 );
 
-img {
-  height: 100px;
-}
+  header {
+    margin: 30px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+      flex: 33.3%;
+      padding: 5px;
+    }
+  
+  img {
+    height: 200px;
+  }
+
+  .buttonGroup {
+    margin-top: 25px;
+  }

@@ -8,16 +8,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: whitesmoke;
@@ -33,16 +23,22 @@
   color: navy;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.column.bad {
+  outline-offset: -2px;
+  outline: 3px red dashed;
 }
 
-.main-image {
-  padding-top: 20px;
+.divButton:focus-visible {
+  outline: 1px black solid;
+}
 
+.column.better {
+  outline: 2px double yellow;
+  margin: 0px;
+  outline-offset: -2px;
+}
+.column.best {
+  outline: 3px green dotted;
+  outline-offset: -2px;
 }
