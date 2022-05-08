@@ -42,3 +42,7 @@
   outline: 3px green dotted;
   outline-offset: -2px;
 }
+
+button, Button, .divButton {
+  margin: 15px;
+}

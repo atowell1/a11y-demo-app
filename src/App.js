@@ -41,6 +41,7 @@ function App() {
             src={backtothefuture}
             alt="Back to the Future Movie Poster"
           ></img>
+          <br></br>
           <div class="divButton" type="button" tabindex="0" alt-text="submit">
             Submit
           </div>
@@ -51,18 +52,17 @@ function App() {
             src={backtothefuture}
             alt="Image of the Back to the Future Movie Poster"
           ></img>
-          <button class="mdc-button mdc-button--outline column">Submit</button>
+          <button class="mdc-button mdc-button--outline">Submit</button>
         </div>
 
         <div class="column best">
           <StarOutlineIcon fontSize="large" /> Best
           <img src={backtothefuture} alt=""></img>
-          <Button class="column" variant="outlined">
+          <Button variant="outlined">
             Submit
           </Button>
+          <HighchartsReact highcharts={Highcharts} options={options} />
         </div>
-        <HighchartsReact highcharts={Highcharts} options={options} />
-        <StartLink />
       </body>
       <footer>Created by Aurelia Towell</footer>
     </div>
