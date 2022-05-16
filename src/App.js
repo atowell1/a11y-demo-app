@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">     
       <h1 className="App-header">
-        Back to the Future: Accessibility fundamentals to drive your web apps
+        Back to the Future: <br></br>Accessibility fundamentals to drive your web apps
         into the future
       </h1>
       <TabPanel />
