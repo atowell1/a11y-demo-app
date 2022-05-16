@@ -1,25 +1,73 @@
 @use "@material/theme" with (
-  $primary: #FEDBD0,
-  $on-primary: #442C2E
+  $primary: #fedbd0,
+  $on-primary: #442c2e
 );
 
-  header {
-    margin: 30px;
-  }
+h1 {
+  margin: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-  .row {
-    display: flex;
-  }
+h2 {
+  text-align: center;
+  background-color: white;
+}
 
-  .column {
-      flex: 33.3%;
-      padding: 5px;
-    }
-  
-  img {
-    height: 200px;
-  }
+.row {
+  display: flex;
+}
 
-  .buttonGroup {
-    margin-top: 25px;
-  }
+.column {
+  flex: 33.3%;
+  padding: 5px;
+  outline-offset: -2px;
+  justify-content: center;
+  display: grid;
+}
+
+// .bad {
+//   outline: dotted red 2px;
+//   background-color: #ffffff;
+// background-size: 54px 54px;
+// background-image:  repeating-linear-gradient(0deg, #901919, #901919 2.7px, #ffffff 2.7px, #ffffff);
+// }
+
+.divButton {
+  text-align: center;
+  outline: 1px solid black;
+  border-radius: 2px;
+}
+
+// .better {
+//   outline: dashed orange 2px;
+//   background-color: #ffffff;
+//   background-image: radial-gradient(#64188f 1.35px, #ffffff 1.35px);
+//   background-size: 27px 27px;
+// }
+
+
+// .best {
+//   outline: solid green 2px;
+//   background-color: #ffffff;
+// background-size: 54px 54px;
+// background-image:  repeating-linear-gradient(to right, #236a1c, #236a1c 2.7px, #ffffff 2.7px, #ffffff);
+// }
+
+img {
+  height: 200px;
+}
+
+.buttonGroup {
+  margin-top: 25px;
+}
+
+.realButton {
+  padding: 1px 15px;
+}
+
+footer {
+  font-size: small;
+  text-align: center;
+}

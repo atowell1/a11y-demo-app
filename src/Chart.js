@@ -2,11 +2,11 @@
 // import Highcharts from 'Highcharts';
 // import React from 'react';
 
-// // var Highcharts = require('highcharts');  
+// var Highcharts = require('highcharts');  
 // // // Load module after Highcharts is loaded
-// // require('highcharts/modules/exporting')(Highcharts);  
+// require('highcharts/modules/exporting')(Highcharts);  
 // // // Create the chart
-// // Highcharts.chart('container', { /*Highcharts options*/ });
+// Highcharts.chart('container', { /*Highcharts options*/ });
 
 // // Build the chart
 // class Chart extends React.Component {
