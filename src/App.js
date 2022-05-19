@@ -1,5 +1,5 @@
 import "./App.scss";
-import TabPanel from "./TabPanel"
+import TabPanel from "./TabPanel.js"
 
 function App() {
   return (

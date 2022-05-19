@@ -5,7 +5,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Aria from "./Aria"
-import Chart from "./Chart";
+// import Chart from "./Chart";
 import Images from "./Images";
 
 function TabPanel(props) {
