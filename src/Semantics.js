@@ -8,7 +8,7 @@ const code1 = (
     class="divButton"
     type="button" 
     tabindex="0"
-    alt-text="submit">
+    aria-label="submit">
       Submit
 </div>`
 );
@@ -16,7 +16,6 @@ const code1 = (
 const code2 = (
   'text',
   `<button 
-    alt-text="submit"
     aria-label="submit button">
       Submit
   </button>`
@@ -35,7 +34,7 @@ export default function Semantics() {
         <div class="column bad ">
           <h2>Bad</h2>
 
-          <div class="divButton" type="button" tabindex="0" alt-text="submit">
+          <div class="divButton" type="button" tabindex="0" aria-label="submit">
             Submit
           </div>
           <br></br>
@@ -45,7 +44,7 @@ export default function Semantics() {
         <div class="column better ">
           <h2>Better</h2>
           
-          <button >Submit</button>
+          <button aria-label="submit" >Submit</button>
           <br></br>
         <CodeBlock className="codeBlock" theme={nord} language={'javascript'} text={(code2)} />
         </div>
