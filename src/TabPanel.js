@@ -5,8 +5,8 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Aria from "./Aria"
-// import Chart from "./Chart";
-import Images from "./Images";
+import AltText from "./AltText";
+import Semantics from "./Semantics";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,12 +48,6 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
-  const data = TabPanel.props;
-  console.log("data", data);
-
-  const allTabs = [ 0, 1, 2, 3];
-
-
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -64,26 +58,27 @@ export default function BasicTabs() {
           textColor="secondary"
           centered
         >
-          <Tab label="Home" {...a11yProps(0)} />
-          <Tab label="Aria" {...a11yProps(1)} />
-          <Tab label="Chart" {...a11yProps(2)} />
-          {/* <Tab label="More" {...a11yProps(3)} />
-          <Tab label="Wish List" {...a11yProps(4)} /> */}
+          <Tab label="Semantics" {...a11yProps(0)} />
+          <Tab label="Alt-text" {...a11yProps(1)} />
+          <Tab label="Aria" {...a11yProps(2)} />
+          <Tab label="More" {...a11yProps(3)} />
+          <Tab label="Chart" {...a11yProps(4)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-          <Images />
+          <Semantics />
       </TabPanel>
       <TabPanel value={value} index={1}>
-          <Aria />
+          <AltText />
       </TabPanel>
       <TabPanel value={value} index={2}>
-          {/* <Chart /> */}
+         <Aria />
       </TabPanel>
       <TabPanel value={value} index={2}>
         
       </TabPanel>
       <TabPanel value={value} index={4}>
+         {/* <Chart /> */}
       </TabPanel>
     </Box>
   );

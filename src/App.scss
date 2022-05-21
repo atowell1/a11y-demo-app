@@ -38,9 +38,11 @@ h2 {
 .divButton {
   text-align: center;
   outline: 1px solid black;
+  outline-offset: 4px;
   border-radius: 2px;
-  :focus-visible {
-    outline: 3px solid black;
+  :focus-within {
+    // outline: 3px solid black;
+    border: 3px solid black;
   }
 }
 
