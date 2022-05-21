@@ -16,7 +16,8 @@ const code1 = (
 const code2 = (
   'text',
   `<button 
-    alt-text="submit">
+    alt-text="submit"
+    aria-label="submit button">
       Submit
   </button>`
 )

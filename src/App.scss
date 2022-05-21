@@ -28,12 +28,15 @@ h2 {
   display: grid;
 }
 
-// .bad {
-//   outline: dotted red 2px;
-//   background-color: #ffffff;
-// background-size: 54px 54px;
-// background-image:  repeating-linear-gradient(0deg, #901919, #901919 2.7px, #ffffff 2.7px, #ffffff);
-// }
+p.caption {
+  text-align: center;
+}
+
+.imageBest {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
 
 .divButton {
   text-align: center;
@@ -41,25 +44,9 @@ h2 {
   outline-offset: 4px;
   border-radius: 2px;
   :focus-within {
-    // outline: 3px solid black;
     border: 3px solid black;
   }
 }
-
-// .better {
-//   outline: dashed orange 2px;
-//   background-color: #ffffff;
-//   background-image: radial-gradient(#64188f 1.35px, #ffffff 1.35px);
-//   background-size: 27px 27px;
-// }
-
-
-// .best {
-//   outline: solid green 2px;
-//   background-color: #ffffff;
-// background-size: 54px 54px;
-// background-image:  repeating-linear-gradient(to right, #236a1c, #236a1c 2.7px, #ffffff 2.7px, #ffffff);
-// }
 
 img {
   height: 200px;

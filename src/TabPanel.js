@@ -61,8 +61,7 @@ export default function BasicTabs() {
           <Tab label="Semantics" {...a11yProps(0)} />
           <Tab label="Alt-text" {...a11yProps(1)} />
           <Tab label="Aria" {...a11yProps(2)} />
-          <Tab label="More" {...a11yProps(3)} />
-          <Tab label="Chart" {...a11yProps(4)} />
+
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -73,12 +72,6 @@ export default function BasicTabs() {
       </TabPanel>
       <TabPanel value={value} index={2}>
          <Aria />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-         {/* <Chart /> */}
       </TabPanel>
     </Box>
   );

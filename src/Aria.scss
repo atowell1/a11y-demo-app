@@ -1,11 +1,18 @@
 .aria-container {
-  display: inline-block;
-}
-
-.aria-div {
   display: flex
 }
 
+
+
 span.codeBlock {
- width: fit-content
+ width: fit-content;
+ text-align: start;
+}
+
+.column {
+  flex: 33.3%;
+  padding: 5px;
+  outline-offset: -2px;
+  justify-content: center;
+  display: grid;
 }
