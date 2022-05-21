@@ -39,6 +39,13 @@ const code4 = (
   </p>`
 )
 
+const code5 = (
+  'text',
+  `<input role="search"
+    aria-label="Enter search term">
+  </input>`
+)
+
 function Aria() {
   return (
     <div>
@@ -99,7 +106,12 @@ function Aria() {
         </div>
       </div>
       <br></br>
-      <Divider />
+      <br></br>
+      <br></br>
+      <Divider className="divider"/>
+      <br></br>
+      <br></br>
+      <br></br><br></br><br></br><br></br>
       <div className="row">
         <div className="column">
           <h2 id="attr" class="article-title">
@@ -118,6 +130,18 @@ function Aria() {
             theme={nord}
             language={"javascript"}
             text={code4}
+            wrapLongLines={true}
+          />
+        </div>
+        
+        <div className="column">
+          <input role="search" aria-label="Enter search term">
+          </input>
+          <CodeBlock
+            className="codeBlock"
+            theme={nord}
+            language={"javascript"}
+            text={code5}
             wrapLongLines={true}
           />
         </div>
